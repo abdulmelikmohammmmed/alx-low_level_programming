@@ -12,7 +12,6 @@ void jack_bauer(void)
 	int h2;
 	int m1;
 	int m2;
-	int a = 9;
 
 	h2 = 0;
 	while (h2 <= 2)
@@ -20,7 +19,6 @@ void jack_bauer(void)
 		if (h2 == 2)
 		{
 			/*Restrain to 23h, not 29*/
-			a = 3;
 		}
 		h1 = 0;
 		while (m2 <= 5)
