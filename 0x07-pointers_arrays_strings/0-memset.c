@@ -1,26 +1,16 @@
 #include "main.h"
 /**
- * _strcat - concatenates two strings
- *  Return: void
+ * memset - fill a block of memory with a specific value
+ *  Return: changed array with new value for n bytes
  */
-char *_strcat(char *dest, char *src)
+char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
-	int j;
+	int i = 0;
 
-	i = 0;
-	while (dest[i] != '\0')
+	for (; n > 0; i++)
 	{
-		i++;
+		s[i] = b;
+		n--;
 	}
-	j = 0;
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
-
-	dest[i] = '\0';
-	return (dest);
+	return (s);
 }
