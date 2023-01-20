@@ -11,6 +11,7 @@ void print_all(const char * const format, ...)
 	char *str, *sep = "";
 
 	va_list list;
+
 	va_start(list, format);
 
 	if (format)
@@ -19,7 +20,7 @@ void print_all(const char * const format, ...)
 		{
 			switch (format[i])
 			{
-				case 'c
+				case 'c':
 					printf("%s%c", sep, va_arg(list, int));
 				break;
 				case 'i':
